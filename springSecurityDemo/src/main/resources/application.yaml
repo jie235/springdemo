@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /securitydemo
+  port: 8090
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf-8&serverTimeZone=GMT
+    username: root
+    password: Rout997279
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  type-aliases-package: com.jie.securitydemo
+  mapper-locations: classpath:/mapper/*.xml
